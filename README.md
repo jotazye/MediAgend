@@ -35,3 +35,43 @@ O projeto está em fase de análise de requisitos, planejamento e modelagem conc
 
 ## Autor
 João Antonio de Campos — Tecnologia da Informação, UFMS.
+
+
+## Como executar o protótipo
+
+### Pré-requisitos
+- Node.js
+- npm
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/jotazye/MediAgend.git
+```
+
+Entre na pasta da aplicação:
+
+```bash
+cd MediAgend/app
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Abra no navegador o endereço local informado pelo Vite.
+
+### Limitações
+O protótipo utiliza dados fictícios e não possui
+integração com banco de dados. Os agendamentos
+são armazenados temporariamente durante a execução.
