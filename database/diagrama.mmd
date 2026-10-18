@@ -1,0 +1,33 @@
+erDiagram
+  PACIENTES ||--o{ CONSULTAS : solicita
+  MEDICOS ||--o{ DISPONIBILIDADES : oferece
+  MEDICOS ||--o{ CONSULTAS : atende
+  DISPONIBILIDADES ||--o{ CONSULTAS : possui_historico
+  PACIENTES {
+    bigint id PK
+    varchar nome
+    varchar email UK
+    varchar telefone
+    timestamptz criado_em
+  }
+  MEDICOS {
+    bigint id PK
+    varchar nome
+    varchar especialidade
+    boolean ativo
+  }
+  DISPONIBILIDADES {
+    bigint id PK
+    bigint medico_id FK
+    timestamptz inicio
+    timestamptz fim
+  }
+  CONSULTAS {
+    bigint id PK
+    bigint paciente_id FK
+    bigint medico_id FK
+    bigint disponibilidade_id FK
+    varchar status
+    varchar observacao
+    timestamptz criada_em
+  }

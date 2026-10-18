@@ -1,0 +1,22 @@
+/* Cole estas regras no FINAL de app/src/styles.css */
+.calendario-rotulo { display:block; font-weight:700; margin-bottom:10px; }
+.calendario-agenda { border:1px solid #71809655; border-radius:14px; padding:14px; background:transparent; max-width:420px; }
+.calendario-topo { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.calendario-navegacao { display:flex; gap:6px; }
+.calendario-navegacao button { background:transparent; color:inherit; border:1px solid #71809666; border-radius:8px; height:32px; width:34px; cursor:pointer; font-size:23px; line-height:1; }
+.calendario-navegacao button:disabled { opacity:.3; cursor:not-allowed; }
+.calendario-grade { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:5px; }
+.calendario-semana { font-size:11px; text-align:center; opacity:.75; padding:7px 0; }
+.calendario-dia { position:relative; min-height:39px; border-radius:8px; border:1px solid transparent; background:transparent; color:inherit; font-size:14px; display:flex; align-items:center; justify-content:center; }
+.calendario-dia.indisponivel { opacity:.3; cursor:not-allowed; }
+.calendario-dia.livre { background:rgba(15,135,116,.13); border-color:rgba(15,135,116,.36); cursor:pointer; font-weight:700; }
+.calendario-dia.livre:hover { background:rgba(15,135,116,.26); }
+.calendario-dia.selecionado { background:#0f8774; border-color:#0f8774; color:white; }
+.calendario-dia:focus-visible,.calendario-navegacao button:focus-visible { outline:3px solid #33bbaa; outline-offset:2px; }
+.calendario-ponto { position:absolute; bottom:3px; left:50%; transform:translateX(-50%); width:5px; height:5px; border-radius:50%; background:#18a98c; }
+.calendario-dia.selecionado .calendario-ponto { background:white; }
+.calendario-legenda { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12px; margin-top:13px; opacity:.8; }
+.legenda-ponto,.legenda-bloqueado { display:inline-block; height:9px; width:9px; border-radius:50%; }
+.legenda-ponto { background:#0f8774; }
+.legenda-bloqueado { background:#888; opacity:.4; margin-left:10px; }
+@media(max-width:600px) { .calendario-agenda { max-width:none; padding:10px; } .calendario-grade { gap:3px; } .calendario-dia { min-height:35px; } }
