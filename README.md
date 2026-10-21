@@ -234,6 +234,20 @@ As funcionalidades de agendamento, consulta de disponibilidades, prevenção de 
 
 O sistema permanece restrito à finalidade acadêmica e não está disponibilizado para atendimento real de pacientes.
 
+## Testes e Garantia de Qualidade — Módulo 4
+
+Foram realizados testes manuais para verificar as principais funcionalidades do MediAgend, incluindo:
+
+- Consulta de médicos pela API.
+- Validação dos campos obrigatórios.
+- Visualização de horários disponíveis.
+- Agendamento e persistência no PostgreSQL.
+- Cancelamento e liberação de horários.
+- Prevenção de conflitos (HTTP 409).
+- Responsividade da interface.
+
+Os resultados foram documentados no relatório do Módulo 4, acompanhado de evidências visuais.
+
 ## Autor
 
 **João Antonio de Campos**  
