@@ -248,6 +248,30 @@ Foram realizados testes manuais para verificar as principais funcionalidades do 
 
 Os resultados foram documentados no relatório do Módulo 4, acompanhado de evidências visuais.
 
+
+## Projeto Integrador III — Qualidade de Software
+
+O Projeto Integrador III dá continuidade ao MediAgend,
+com foco na garantia da qualidade e na evolução do sistema.
+
+### Módulo 1 — Inspeção de Artefatos
+- Inspeção dos requisitos e diagramas.
+- Análise da arquitetura e documentação.
+- Identificação de 7 inconsistências.
+- Avaliação com representante do público-alvo.
+- Definição de medidas corretivas.
+
+### Módulo 2 — Plano de Testes
+- Planejamento de testes unitários e de integração.
+- Testes funcionais, regressão e concorrência.
+- Testes de desempenho e segurança.
+- Avaliação de usabilidade e acessibilidade.
+- Definição de 14 cenários de teste.
+- Cronograma, gestão de defeitos e análise de riscos.
+
+**Status:** Módulos 1 e 2 documentados.
+Os testes automatizados estão planejados para etapas futuras.
+
 ## Autor
 
 **João Antonio de Campos**  
