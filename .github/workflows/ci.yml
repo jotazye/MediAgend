@@ -1,0 +1,38 @@
+name: MediAgend CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Instalar dependencias da API
+        working-directory: ./api
+        run: npm ci
+
+      - name: Verificar sintaxe da API
+        working-directory: ./api
+        run: |
+          node --check server.js
+          node --check db.js
+
+      - name: Instalar dependencias do frontend
+        working-directory: ./app
+        run: npm ci
+
+      - name: Construir frontend
+        working-directory: ./app
+        run: npm run build
